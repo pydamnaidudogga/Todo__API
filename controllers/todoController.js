@@ -72,9 +72,9 @@ exports.findAll = (req, res) => {
       });
   };
 
-// Update a Tutorial by the id in the request
+// Update a Todo by the id in the request
 exports.update = (req, res) => {
-  const id = req.params.todoId;
+  const id = req.body.todoId;
 
   Todo.update(req.body, {
     where: { id: id }
