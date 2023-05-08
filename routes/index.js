@@ -8,6 +8,9 @@ router.post("/todo", createTodo.create);
 // Retrieve all Todos
 router.get("/todo", createTodo.findAll);
 
+// Update a Tutorial with id
+router.put("/todo", createTodo.update);
+
 
 // Retrieve a single Todo with id
 router.get("/todo/:todoId", createTodo.findOne);
